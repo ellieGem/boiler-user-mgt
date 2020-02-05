@@ -1,0 +1,32 @@
+{
+	"name": "boiler-user-mgt",
+	"version": "1.0.0",
+	"description": "This is a node-api for user management - boiler plate",
+	"main": "server.js",
+	"scripts": {
+		"test": "mocha"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dennismachu/boiler-user-mgt.git"
+	},
+	"keywords": [
+		"user",
+		"api",
+		"javascript",
+		"express",
+		"joi",
+		"mocha",
+		"chai"
+	],
+	"author": {
+		"name": "Dennis Machu",
+		"linkedIn": "https://linkedin.com/in/dennismachu",
+		"email": "dennis.machu@outlook.com"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dennismachu/boiler-user-mgt/issues"
+	},
+	"homepage": "https://github.com/dennismachu/boiler-user-mgt#readme"
+}
