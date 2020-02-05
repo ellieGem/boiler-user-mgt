@@ -4,7 +4,8 @@
 	"description": "This is a node-api for user management - boiler plate",
 	"main": "server.js",
 	"scripts": {
-		"test": "mocha"
+		"test": "mocha",
+		"start:dev": "nodemon -r dotenv/config --exec babel-node src/server.js"
 	},
 	"repository": {
 		"type": "git",
