@@ -1,0 +1,11 @@
+# Environment
+NODE_ENV = test
+
+# Server Port
+PORT = 4444
+
+# Database
+DEV_DB = mongodb://localhost:27017/your-database-name
+PRO_DB = 
+
+#
