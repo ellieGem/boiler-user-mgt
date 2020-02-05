@@ -1,4 +1,3 @@
-import { variables } from './config/config.variables';
 import bodyParser from 'body-parser';
 const log = require('morgan')('dev');
 import express from 'express';
