@@ -6,9 +6,6 @@ var chalk = require('chalk');
 
 // Database setup
 const mainDB = process.env.DEV_DB;
-if (process.env.NODE_ENV === 'PRODUCTION') {
-	return (mainDB = process.env.PRO_DB);
-}
 
 var connected = chalk.bold.cyan;
 var error = chalk.bold.yellow;

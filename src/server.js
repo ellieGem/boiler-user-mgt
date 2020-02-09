@@ -6,8 +6,8 @@ const app = express();
 import cors from 'cors';
 
 // Swagger
-const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger.json');
+// const swaggerUi = require('swagger-ui-express');
+// const swaggerDocument = require('../swagger.json');
 
 // Mongo Database
 import db from './config/config.database';
@@ -33,10 +33,13 @@ app.use(cors());
 const router = express.Router();
 app.use('/api', router);
 
-app.use('/api-docs', swaggerUi.serve);
-app.get('/api-docs', swaggerUi.setup(swaggerDocument));
+// app.use('/api-docs', swaggerUi.serve);
+// app.get('/api-docs', swaggerUi.setup(swaggerDocument));
+import { usersRouter } from './users/users.routes';
+usersRouter(router);
 
 app.get('/', (req, res) => res.send('Hello World! User Management in Action'));
+
 // request to handle undefined or all other routes
 app.use('*', function(req, res) {
 	// logger.info("users route");
